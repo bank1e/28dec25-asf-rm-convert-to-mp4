@@ -43,7 +43,7 @@ New-Item -ItemType Directory -Force -Path $out | Out-Null
 # Get Files to Convert
 # ============================================
 $files = Get-ChildItem -Path $src -File | Where-Object { 
-    $_.Extension.ToLower() -in ".rm", ".asf" 
+    $_.Extension.ToLower() -in ".rm", ".asf", ".mp3"  
 }
 
 if ($files.Count -eq 0) {
