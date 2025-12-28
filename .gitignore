@@ -1,0 +1,23 @@
+# Ignore configuration file (contains local paths)
+config.json
+
+# Ignore output directory
+_mp4/
+
+# PowerShell module cache
+*.psm1.cache
+
+# Windows thumbnail cache
+Thumbs.db
+
+# macOS metadata
+.DS_Store
+```
+
+## File structure now:
+```
+📁 Your script folder/
+├── .gitignore          (this file)
+├── convert-video.ps1   (your script)
+├── config.json         (ignored by git)
+└── config.json.example (optional - template for others)
