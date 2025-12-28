@@ -97,12 +97,3 @@ Write-Host "Conversion Complete!" -ForegroundColor Cyan
 Write-Host "  Successful: $successCount" -ForegroundColor Green
 Write-Host "  Failed: $failCount" -ForegroundColor $(if ($failCount -gt 0) { "Red" } else { "Green" })
 Write-Host "  Output folder: $out"
-```
-
-## Create your `config.json` in the same folder as the script:
-
-**File structure:**
-```
-📁 Your script folder/
-├── convert-video.ps1  (your script)
-└── config.json        (your config)
